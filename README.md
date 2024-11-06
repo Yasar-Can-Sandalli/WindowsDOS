@@ -1,4 +1,6 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="MS-DOS logo" src="https://github.com/Microsoft/MS-DOS/blob/main/.readmes/msdos-logo.png">   
+
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="MS-DOS logo" src="Images\msdos-logo.png">   
+
 
 # Windows DOS Komutlarına Giriş 💻
 <p>
@@ -12,3 +14,5 @@ Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler.
 
 ```dos
 dir
+```
+<img width="800" align="left" style="float: left; margin: 0 10px 0 0;" alt="MS-DOS logo" src="Images\dir.png">   
