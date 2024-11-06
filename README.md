@@ -4,7 +4,6 @@
 
 # Windows DOS Komutlarına Giriş 💻
 <p>
-  Bu dökümanda temel ms-dos komutkları anlatılacaktır. Bu sayede windowsta basit terminal kodları yazabilecek temel dosya işlemlerini terminal aracılığı ile yapabileceksiniz
   MS-DOS, bilgisayarlar üzerinde temel işlemleri komut satırında gerçekleştirebilmek için kullanılan bir işletim sistemidir. Bu rehberde, bazı temel MS-DOS komutlarını ve kullanım şekillerini bulacaksınız.
 </p>
 </br>
