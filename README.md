@@ -18,14 +18,8 @@ Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler. En
 dir
 
 ``` 
+ ![Görsel Açıklaması](Images\Kirpilmis\dir.jpg)
+ </br>
 
-  
-<div style="display: flex; align-items: top;">
+MS-DOS, bilgisayarlar üzerinde temel işlemleri komut satırında gerçekleştirebilmek için kullanılan bir işletim sistemidir. Bu rehberde, bazı temel MS-DOS komutlarını ve kullanım şekillerini bulacaksınız.
 
-  <img src="Images\Kirpilmis\dir.jpg" alt="MS-DOS Görseli" width="550" >
-  
-  <div style="padding-left: 20px;">
-    <p>MS-DOS, bilgisayarlar üzerinde temel işlemleri komut satırında gerçekleştirebilmek için kullanılan bir işletim sistemidir. Bu rehberde, bazı temel MS-DOS komutlarını ve kullanım şekillerini bulacaksınız.</p>
-  </div>
-
-</div>
