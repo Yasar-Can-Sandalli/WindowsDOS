@@ -16,7 +16,6 @@ Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler. En
 
 ```dos
 dir
-
 ``` 
  ![Görsel Açıklaması](Images/dir.png)
  </br>
