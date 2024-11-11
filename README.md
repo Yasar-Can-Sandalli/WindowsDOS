@@ -30,10 +30,10 @@ dir /a
 
 <!--dir a-->
 
-* `dir /a` parametresi ile sadece gizli doyaları ve klasörleri listeleyebilirsiniz
+* `dir /ah` parametresi ile sadece gizli doyaları ve klasörleri listeleyebilirsiniz
 
 ```dos
-dir /ha
+dir /ah
 ```
 ![dir_komutu](Images/dirah.png)
 
