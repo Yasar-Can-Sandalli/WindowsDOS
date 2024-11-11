@@ -89,7 +89,7 @@ cd ..
 cd [dizin]
 ```
 
-![cd_komutu](Images\cdD.png)
+![cd_komutu](Images/cdD.png)
   __Ek Bilgi__: cd ..\ [dizin] şeklinde cd komutunun bir dizine geçme kodu ile bir alt klasör gitme kodu kombolanabilir !
 
  * `cd \` Kök (root) dizinine geçer. Yani, şu anki sürücünün en üst dizinine gider.
@@ -98,7 +98,7 @@ cd [dizin]
 cd \
 ```
 
-![cd_komutu](Images\cdT.png)
+![cd_komutu](Images/cdT.png)
 
  * `cd \d [dizin]` Farklı bir sürücüdeki dizine geçiş yapmayı sağlar. Normal cd komutunda yalnızca aynı sürücüdeki dizinler arasında geçiş yapılabilir, ancak /d parametresi ile sürücü değiştirerek belirtilen dizine gidilebilir.
 
