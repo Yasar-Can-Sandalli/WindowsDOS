@@ -114,3 +114,14 @@ cd \d [D:\Projeler]
 |`cd ..`  |Bir üst dizine çıkar.|
 |`cd \`|Kök dizine geçiş yapar.|
 |`cd /d [dizin]`|Sürücüyü değiştirerek belirtilen dizine gider.|
+
+
+## `cls`
+
+**Konsol Ekranını Temizleme**  
+Bu komut, terminalde daha önce yazılan tüm kodları temizleyerek temiz bir sayfa görünümü sağlar. Konsola cls komutu çalıştrılıkdıktan sonra en tepe mevcut dizin klasorü vardır
+
+```dos
+cls
+```
+![cls_komutu](Images/cls.png)
