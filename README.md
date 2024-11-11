@@ -80,7 +80,7 @@ cd
 ```dos
 cd ..
 ```
-![cd_komutu](Images\cd....png)
+![cd_komutu](Images/cd....png)
 
 
  * `cd [dizin]` Belirtilen dizine geçer. Eğer tam yol yazılırsa (örneğin, C:\Klasor\AltKlasor), komut doğrudan o dizine gider. Aksi takdirde, belirtilen dizin mevcut çalışma dizininin alt klasörü olarak değerlendirilir.
