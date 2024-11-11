@@ -216,6 +216,34 @@ copy /-y dosya.txt [hedef_dizin]
 
 ![copy_komut](Images/copyYes.png)
 
+## `move`
+**Taşıma**
+Bu komut, Windows komut satırında dosya veya klasörleri bir konumdan başka bir konuma taşımak için kullanılır. Ayrıca bu komutla, dosya ve klasörlerin adını değiştirmek de mümkündür.
+
+```dos
+move [Taşınacak_Klasör_Adı] [hedef_dizin]
+```
+![move_komut](Images/move.png)
+
+ * `move /y` Bu komut, aynı dosya zaten varsa, sormadan üzerine yazarak dosyayı taşır. 
+
+```dos
+move /y dosya.txt [hedef_dizin]
+```
+* `move /-y` Bu komut, hedef klasörde aynı ada sahip bir dosya varsa onay ister.
+
+```dos
+move /-y dosya.txt [hedef_dizin]
+```
+
+![move_komut](Images/moveYEs.png)
+
+
+|Parametre  |Açıklama |
+|-----------|---------|
+|`/y`|Aynı ada sahip dosya varsa sormadan üzerine yazar.|
+|`/-y`  |Aynı ada sahip dosya varsa işlemden önce onay ister.|
+
 ## `systeminfo`
 **Sistem Bilgileri** </br>
 Bu komut bilgisayarın sistem bilgilerini görüntülemek için kullanılır. komut, işletim sistemi sürümü, yüklü RAM miktarı, işlemci bilgisi, ağ yapılandırması gibi birçok ayrıntıyı listeler.
@@ -247,3 +275,75 @@ tree /a
 ```
 
 ![tree_komutu](Images/treea.png)
+
+## `tasklist`
+**Çalışan Görev ve Uygulamalar Görme**  </br>
+Windows komut satırında çalışan tüm süreçlerin (process) listesini gösterir. Bu komut, sistemde aktif olarak çalışan program ve hizmetlerin detaylarını görmeye olanak tanır. Her işlem için PID (Process ID), bellek kullanımı ve işlem adı gibi bilgiler görüntülenir
+
+```dos
+tasklist
+```
+![tasklist_komutu](Images/tasklist.png)
+
+## `taskkill`
+**Çalışan Görev ve Uygulamaların Görevini Sonlandırma**  </br>
+Bu komut, çalışan işlemleri sonlandırmak için kullanılır. Bu komut, belirli bir işlem ya da uygulamayı kapatmanızı sağlar.
+
+```dos
+taskkill /im  [işlem_adı]
+```
+
+![tasklist_komutu](Images/taskkill.png)
+
+## `ipconfig`
+Bu komut, Windows işletim sisteminde ağ bağlantılarıyla ilgili IP adresi, alt ağ maskesi ve varsayılan ağ geçidi gibi bilgileri görüntülemek için kullanılır.
+Bu komut, bilgisayardaki tüm ağ bağdaştırıcılarının temel IP bilgilerini gösterir. IP adresi, alt ağ maskesi ve varsayılan ağ geçidi gibi bilgileri içerir.
+
+```dos
+ipconfig
+```
+
+![ipconfig_komut](Images/ipconfig.png)
+
+* `ipconfig /all` Tüm ağ bağdaştırıcıları hakkında ayrıntılı bilgi verir. IP adresi, alt ağ maskesi, varsayılan ağ geçidi, DHCP, DNS sunucuları ve MAC adresi gibi detaylar görüntülenir.
+
+```dos
+ipconfig /all
+```
+* `ipconfig /release` Mevcut IP adresini serbest bırakır (yalnızca DHCP kullanılarak atanmış IP adresleri için geçerlidir). Bu, bağdaştırıcıdaki mevcut IP’yi devre dışı bırakır
+
+```dos
+ipconfig /release
+```
+
+* `ipconfig /renew` DHCP sunucusundan yeni bir IP adresi almak için kullanılır. release komutundan sonra yeni bir IP adresi alır.
+
+```dos
+ipconfig /renew
+```
+
+* `ipconfig /flushdns` DNS çözümleme önbelleğini temizler. Bu, bilgisayarın DNS sunucusuyla olan önbelleğe alınmış bağlantılarını sıfırlar. Önbellekteki eski veya yanlış DNS kayıtlarını kaldırmak için kullanılır.
+
+```dos
+ipconfig /flushdns
+```
+
+* `ipconfig /displaydns` Mevcut DNS çözümleme önbelleğini görüntüler. Bu komutla, daha önce çözümlenmiş DNS kayıtlarını görebilirsiniz.
+
+```dos
+ipconfig /displaydns 
+```
+
+![ipconfig_komut](Images/ipdis.png)
+
+
+|Parametre  |Açıklama |
+|-----------|---------|
+|`/all`|Tüm ağ bağdaştırıcıları hakkında ayrıntılı bilgi verir.|
+|`/release`  |DHCP IP adresini serbest bırakır.|
+|`/renew`  |DHCP IP adresini yeniler.|
+|`/flushdns`  |DNS çözümleme önbelleğini temizler.|
+|`/displaydns`  |DNS çözümleme önbelleğini gösterir. |
+|`/registerdns`  |DNS kaydını yeniler.|
+|`/showclassid`  |DHCP sınıf kimliğini gösterir.|
+|`/setclassid`  |DHCP sınıf kimliğini ayarlar.|
