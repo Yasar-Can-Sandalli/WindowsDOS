@@ -17,7 +17,7 @@ Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler. En
 dir
 ```
 
-![dir_komutu](Images/dir.png)
+
 
 * `dir /a` parametresi ile gizli dosyalar dahil tüm dosyalari listeleyebilirisiniz
 
@@ -25,4 +25,5 @@ dir
 dir /a
 ```
 
-<div style="display: flex; gap: 10px;"> <img src="Images/dira.png" alt="dira komutu" width="750"> <img src="Images/diraD.png" alt="dira komutu Desktop" width="750"> </div> 
+![dir_komutu](Images/dira.png)
+![dir_komutu](Images/diraD.png)
