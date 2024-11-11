@@ -25,4 +25,4 @@ dir
 dir /a
 ```
 
-<div style="display: flex; gap: 10px;"> <img src="Images/dira.png" alt="dira komutu" width="650"> <img src="Images/diraD.png" alt="dira komutu Desktop" width="550"> </div> 
+<div style="display: flex; gap: 10px;"> <img src="Images/dira.png" alt="dira komutu" width="750"> <img src="Images/diraD.png" alt="dira komutu Desktop" width="750"> </div> 
