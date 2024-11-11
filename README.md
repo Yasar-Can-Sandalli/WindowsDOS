@@ -28,6 +28,8 @@ dir /a
 ![dir_komutu](Images/dira.png)
 ![dir_komutu](Images/diraD.png)
 
+<!--dir a-->
+
 * `dir /a` parametresi ile sadece gizli doyaları ve klasörleri listeleyebilirsiniz
 
 ```dos
@@ -35,9 +37,20 @@ dir /ha
 ```
 ![dir_komutu](Images/dirah.png)
 
-* `dir /b` parametresi ile sadece dosya ve klasör adlarını gösterir; ek bilgi içermez ve Listelemede minimum bilgi sağlar.
+<!--dir b-->
+
+* `dir /b` parametresi ile sadece dosya ve klasör adlarını görebilirsiniz; ek bilgi içermez ve listelemede minimum bilgi sağlar.
 
 ```dos
 dir /b
 ```
-![dir_komutu](dirb.png)
+![dir_komutu](Images/dirb.png)
+
+<!--dir d-->
+
+* `dir /d` Dosya ve klasör adlarını geniş biçimde, köşeli parantezler içinde ekranda listeler
+
+```dos
+dir /d
+```
+![dir_komutu](Images/dird.png)
