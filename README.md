@@ -80,7 +80,7 @@ cd
 ```dos
 cd ..
 ```
-![dir_komutu](Images\cd....png)
+![cd_komutu](Images\cd....png)
 
 
  * `cd [dizin]` Belirtilen dizine geçer. Eğer tam yol yazılırsa (örneğin, C:\Klasor\AltKlasor), komut doğrudan o dizine gider. Aksi takdirde, belirtilen dizin mevcut çalışma dizininin alt klasörü olarak değerlendirilir.
@@ -89,7 +89,7 @@ cd ..
 cd [dizin]
 ```
 
-![dir_komutu](Images\cdD.png)
+![cd_komutu](Images\cdD.png)
   __Ek Bilgi__: cd ..\ [dizin] şeklinde cd komutunun bir dizine geçme kodu ile bir alt klasör gitme kodu kombolanabilir !
 
  * `cd \` Kök (root) dizinine geçer. Yani, şu anki sürücünün en üst dizinine gider.
