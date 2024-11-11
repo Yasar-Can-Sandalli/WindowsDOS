@@ -8,7 +8,8 @@
 
 </br>
 
-### `dir`
+## `dir`
+
 **Klasör İçeriğini Listeleme**  
 Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler. En sonda bulduğu sonuçların sayısını en aşağıda döndürür
 
@@ -18,5 +19,4 @@ dir
  ![Görsel Açıklaması](Images/dir.png)
  </br>
 
-MS-DOS, bilgisayarlar üzerinde temel işlemleri komut satırında gerçekleştirebilmek için kullanılan bir işletim sistemidir. Bu rehberde, bazı temel MS-DOS komutlarını ve kullanım şekillerini bulacaksınız.
 
