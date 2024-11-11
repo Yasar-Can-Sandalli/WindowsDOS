@@ -105,7 +105,8 @@ cd \
 ```dos
 cd \d [D:\Projeler]
 ```
- _Burada köşeli parantez içinde verilen dizin örnek amaçlıdır_
+ _Uyari!_ Burada köşeli parantez içinde verilen dizin örnek amaçlıdır
+
 
 |Parametre  |Açıklama |
 |-----------|---------|
