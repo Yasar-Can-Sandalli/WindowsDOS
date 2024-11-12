@@ -8,9 +8,9 @@
 
 </br>
 
-## `dir`
+## 📂 `dir`
 
-**Klasör İçeriğini Listeleme**  
+**🗂 Klasör İçeriğini Listeleme**  
 Bu komut, içinde bulunduğunuz dizindeki dosyaları ve klasörleri listeler. En sonda bulduğu sonuçların sayısını en aşağıda döndürür
 
 ```dos
@@ -443,7 +443,7 @@ fc /c dosya1.txt dosya2.txt
 fc /l dosya1.txt dosya2.txt
 ```
 
-## `xcopy`
+## 🖇️ `xcopy`
 __Dizinleri Biryerden Başka Bir Yere Kopyalamak__ </br>
 MS-DOS'ta xcopy komutu, dosyaları ve dizinleri bir yerden başka bir yere kopyalamak için kullanılır. xcopy komutu, standart copy komutuna göre daha fazla özellik sunar, özellikle dizin yapılarının kopyalanması gibi işlemler için kullanılır.
 
@@ -462,7 +462,7 @@ xcopy [kaynak] [hedef]
 |`xcopy /i`  |Hedef bir dizinse, kopyalama işlemi sırasında dizin olarak kabul eder|
 </br>
 
-## `date`
+## 📅 `date`
 __Tarihi Görüntüleme Ve Değiştirme__ </br>
 MS-DOS'taki date komutu, bilgisayarın tarihini görüntülemek ve değiştirmek için kullanılır. Bu komut, sistemin tarih ayarlarını kontrol etmek veya değiştirmek amacıyla kullanılır.
 
@@ -480,7 +480,7 @@ _Bu komut, bilgisayarın mevcut tarihini görüntüler_
 date 12-05-2024
 ```
 
-## `time`
+## ⌚ `time`
 __Zamanı Görüntüleme Ve Değiştirme__ </br>
 MS-DOS'taki time komutu, bilgisayarın saatini görüntülemek ve değiştirmek için kullanılır. Bu komut, sistem saatini kontrol etmek veya ayarlamak amacıyla kullanılır.
 
@@ -491,14 +491,14 @@ time
 ![time_komut](Images/time.png)
 _Burada 12 saat, 16 dakika, 27 saniye ve 97 ise saniyenin kesir kısmıdır_
 
-* __Zamanı Değiştirme__ </br> 
+* __⏰ Zamanı Değiştirme__ </br> 
 `time 17:45:00` Bu komut, saati 17:45:00 olarak ayarlar
 
 ```dos
 time 17:45:00
 ```
 
-## `shutdown`
+## 🔌 `shutdown`
 **Bilgisayarı Kapatma Veya Yeniden Başlatma** </br>
 MS-DOS'taki veya Windows komut satırındaki shutdown komutu, bilgisayarın kapatılması, yeniden başlatılması veya oturum kapatma işlemlerini yönetmek için kullanılır. Bu komut, genellikle bir bilgisayarın uzaktan kapatılmasını veya bakım amacıyla planlı bir kapama işlemi başlatılmasını sağlamak için kullanılır.
 
@@ -512,7 +512,7 @@ shutdown [seçenekler]
 shutdown /s
 ```
 
-* __Bilgisayarı Yeniden Başlatmak__ </br> 
+* __🔄 Bilgisayarı Yeniden Başlatmak__ </br> 
 `shutdown /r` Bu komut, bilgisayarı yeniden başlatır. Bilgisayar kapanır ve tekrar başlar
 
 ```dos
