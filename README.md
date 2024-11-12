@@ -497,3 +497,57 @@ _Burada 12 saat, 16 dakika, 27 saniye ve 97 ise saniyenin kesir kısmıdır_
 ```dos
 time 17:45:00
 ```
+
+## `shutdown`
+**Bilgisayarı Kapatma Veya Yeniden Başlatma** </br>
+MS-DOS'taki veya Windows komut satırındaki shutdown komutu, bilgisayarın kapatılması, yeniden başlatılması veya oturum kapatma işlemlerini yönetmek için kullanılır. Bu komut, genellikle bir bilgisayarın uzaktan kapatılmasını veya bakım amacıyla planlı bir kapama işlemi başlatılmasını sağlamak için kullanılır.
+
+```dos
+shutdown [seçenekler]
+```
+* __Bilgisayarı Kapatmak__ </br> 
+`shutdown /s` Bu komut, bilgisayarı kapatmaya başlatır. Kapatma işlemi tamamlandığında, bilgisayar kapanacaktır
+
+```dos
+shutdown /s
+```
+
+* __Bilgisayarı Yeniden Başlatmak__ </br> 
+`shutdown /r` Bu komut, bilgisayarı yeniden başlatır. Bilgisayar kapanır ve tekrar başlar
+
+```dos
+shutdown /r
+```
+
+* __Kapatma İşlemini Belirli Bir Süre Sonra Yapmak__ </br> 
+`shutdown /s /t 60` Bu komut, bilgisayarı 60 saniye sonra kapatır. /t parametresi, kapatma işlemine başlanacak süreyi belirler (saniye cinsinden)
+
+```dos
+shutdown /s /t 60
+```
+
+* __Kapatma İşlemine Bir Açıklama Eklemek__ </br> 
+`shutdown /s /t 60 /c " Bilgisayar bakım için kapatılacak. "`  Bu komut, bilgisayarı 60 saniye sonra kapatacak ve kullanıcıya "Bilgisayar bakım için kapatılacak." mesajını gösterecektir.
+
+```dos
+shutdown /s /t 60 /c " Bilgisayar bakım için kapatılacak. "
+```
+
+* __Kapatma İşlemi Sırasında Herhangi Bir Uyarı Mesajı Göstermemek__ </br> 
+`shutdown /s /f`  Bu komut, bilgisayarı kapatırken açık olan tüm uygulamaları zorla kapatır ve kullanıcıdan herhangi bir onay almaz. /f parametresi, açık uygulamaları kapatmayı zorlar.
+
+```dos
+shutdown /s /f
+```
+
+* __Kapatma İşlemi Sırasında Yeniden Başlatmayı Engellemek__ </br> 
+`shutdown /a`  Bu komut, halen devam eden bir kapatma işlemini iptal eder. Eğer bir kapatma işlemine başlamışsanız, bu komut işlemi durdurur.
+
+```dos
+shutdown /a
+```
+| Parametreleri  |Açıklama |
+|-----------|---------|
+|`/f`|Açık olan tüm uygulamaları kapatarak, kapatma işlemini zorlar|
+|`/t xxx`  |  Kapatma işleminin ne kadar süre sonra gerçekleşeceğini belirler (saniye cinsinden).|
+|`/c "Mesaj"`  | Kapatma işlemi sırasında kullanıcıya gösterilecek bir mesaj ekler|
