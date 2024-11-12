@@ -296,6 +296,7 @@ taskkill /im  [işlem_adı]
 ![tasklist_komutu](Images/taskkill.png)
 
 ## `ipconfig`
+**Ağ Bağlantıları** </br>
 Bu komut, Windows işletim sisteminde ağ bağlantılarıyla ilgili IP adresi, alt ağ maskesi ve varsayılan ağ geçidi gibi bilgileri görüntülemek için kullanılır.
 Bu komut, bilgisayardaki tüm ağ bağdaştırıcılarının temel IP bilgilerini gösterir. IP adresi, alt ağ maskesi ve varsayılan ağ geçidi gibi bilgileri içerir.
 
@@ -346,4 +347,153 @@ ipconfig /displaydns
 |`/displaydns`  |DNS çözümleme önbelleğini gösterir. |
 |`/registerdns`  |DNS kaydını yeniler.|
 |`/showclassid`  |DHCP sınıf kimliğini gösterir.|
-|`/setclassid`  |DHCP sınıf kimliğini ayarlar.|
+|`/setclassid`  |DHCP sınıf kimliğini ayarlar.| 
+</br>
+
+
+## `echo` 
+**Mesaj Görüntüleme** </br>
+Bu komut, DOS ortamında veya Komut isteminde mesajlar görüntülemek veya komut dosyasında değişken değerlerini yazdırmak için kullanılır.
+
+```dos
+echo
+```
+
+![echo_komut](Images/echo.png)
+
+* __Dosyaya Metin Yazma__ </br> 
+`echo Bu bir örnek metin > dosya.txt` Bu komut, "Bu bir örnek metin" yazısını dosya.txt adlı bir dosyaya yazar. Eğer dosya yoksa, yeni bir dosya olarak oluşturur.
+
+```dos
+echo Bu bir örnek metin > dosya.txt 
+```
+
+* __Metin Eklemek__ </br> 
+`echo Bu da ek bir satır >> dosya.txt` Bu komut, dosya.txt dosyasının sonuna "Bu da ek bir satır" ifadesini ekler.
+
+```dos
+echo Bu da ek bir satır >> dosya.txt 
+```
+
+![echo_komut](Images/echoFullDoster.png) 
+
+
+## `type` 
+**Dosya İçeriğini Görüntüleme** </br>
+Bu komut, MS-DOS ve Windows Komut İstemi'nde bir dosyanın içeriğini ekranda görüntülemek için kullanılır. Genellikle düz metin dosyalarını hızlıca okumak veya kontrol etmek için kullanılır.
+
+```dos
+type [dosya_adı]
+```
+
+![echo_komut](Images/type.png) 
+
+* __Birden Fazla Dosya İçeriğini Görüntüleme__ </br> 
+`type dosya1.txt dosya2.txt` Bu komut, dosya1.txt ve dosya2.txt dosyalarının içeriklerini ardışık olarak ekranda gösterir.
+
+```dos
+type dosya1.txt dosya2.txt
+```
+![echo_komut](Images/typeMany.png) 
+
+* __Type ile Pipe Kullanarak Başka Komutlara Gönderme__ </br> 
+`type dosya.txt | more` Bu komut, dosya.txt dosyasının içeriğini bir sayfa olarak gösterir. | more kısmı, içeriğin ekrana sığmadığı durumlarda sayfa sayfa ilerlemeyi sağlar.
+
+```dos
+type dosya.txt | more
+```
+
+* __Çıkışı Başka Bir Dosyaya Yönlendirme__ </br> 
+`type dosyaadi.txt > yenidosya.txt` Bu komut, dosyaadi.txt dosyasının içeriğini yenidosya.txt adlı yeni bir dosyaya yazar. Mevcut bir dosya varsa, üzerine yazar.
+
+```dos
+type dosya.txt > yenidosya.txt
+```
+![echo_komut](Images/typeD.png)
+
+
+## `fc`
+**Dosyaları Karşılaştırma** </br>
+Bu komut, iki dosya arasındaki farkları bulmak ve karşılaştırmak için kullanılan bir MS-DOS ve Windows komutudur. fc komutu, iki dosyayı satır satır ya da ikili (binary) modda karşılaştırarak farkları ekranda gösterir.
+
+```dos
+fc [seçenekler] [dosya1] [dosya2] 
+```
+
+![echo_komut](Images/fc.png)
+
+* __İkili Dosya Karşılaştırması__ </br> 
+`fc /b dosya1.exe dosya2.exe` /b (binary) seçeneği, dosyaların ikili modda karşılaştırılmasını sağlar. Bu seçenek, özellikle iki program dosyasının veya ikili dosyanın karşılaştırılması için kullanılır.
+
+```dos
+fc /b dosya1.exe dosya2.exe
+```
+![fc_komut](Images/fcb.png)
+
+* __Yinelenen Farkları Gösterme__ </br> 
+`fc /c dosya1.txt dosya2.txt` /c seçeneği, büyük/küçük harf farklılıklarını dikkate almadan karşılaştırma yapar. Bu, metin dosyalarında küçük harf/büyük harf farklılıklarını görmezden gelmek için faydalıdır.
+
+```dos
+fc /c dosya1.txt dosya2.txt
+```
+
+* __Farklılıkları Satır Satır İnceleme__ </br> 
+`fc /l dosya1.txt dosya2.txt` /l seçeneği, dosyaları metin satırı modunda karşılaştırır (varsayılan olarak zaten metin modunda çalışır). Bu seçeneği özellikle büyük dosyalar için daha hızlı bir karşılaştırma yapmak amacıyla kullanabilirsiniz.
+```dos
+fc /l dosya1.txt dosya2.txt
+```
+
+## `xcopy`
+__Dizinleri Biryerden Başka Bir Yere Kopyalamak__ </br>
+MS-DOS'ta xcopy komutu, dosyaları ve dizinleri bir yerden başka bir yere kopyalamak için kullanılır. xcopy komutu, standart copy komutuna göre daha fazla özellik sunar, özellikle dizin yapılarının kopyalanması gibi işlemler için kullanılır.
+
+```dos
+xcopy [kaynak] [hedef]
+```
+![xcopy_komut](Images/xcopy.png)
+
+|Önemli Parametreleri  |Açıklama |
+|-----------|---------|
+|`xcopy /e`|Boş dizinler dahil olmak üzere tüm alt dizinleri kopyalar|
+|`xcopy /h`  | Gizli ve sistem dosyalarını kopyalar|
+|`xcopy /y`  | Kopyalama sırasında dosya var ise soruyu atlar ve üzerine yazar|
+|`xcopy /d`  |Kaynak dosyalarındaki değişiklikleri kopyalar (değiştirilen dosyaları)|
+|`xcopy /s`  |Boş dizinleri hariç tutarak, alt dizinlerdeki dosyaları kopyalar|
+|`xcopy /i`  |Hedef bir dizinse, kopyalama işlemi sırasında dizin olarak kabul eder|
+</br>
+
+## `date`
+__Tarihi Görüntüleme Ve Değiştirme__ </br>
+MS-DOS'taki date komutu, bilgisayarın tarihini görüntülemek ve değiştirmek için kullanılır. Bu komut, sistemin tarih ayarlarını kontrol etmek veya değiştirmek amacıyla kullanılır.
+
+```dos
+date
+```
+
+![date_komut](Images/date.png)
+_Bu komut, bilgisayarın mevcut tarihini görüntüler_
+
+* __Tarihi Değiştirme__ </br> 
+`date 12-05-2024` Bu komut, tarihi 5 Aralık 2024 olarak ayarla
+
+```dos
+date 12-05-2024
+```
+
+## `time`
+__Zamanı Görüntüleme Ve Değiştirme__ </br>
+MS-DOS'taki time komutu, bilgisayarın saatini görüntülemek ve değiştirmek için kullanılır. Bu komut, sistem saatini kontrol etmek veya ayarlamak amacıyla kullanılır.
+
+```dos
+time
+```
+
+![time_komut](Images/time.png)
+_Burada 12 saat, 16 dakika, 27 saniye ve 97 ise saniyenin kesir kısmıdır_
+
+* __Zamanı Değiştirme__ </br> 
+`time 17:45:00` Bu komut, saati 17:45:00 olarak ayarlar
+
+```dos
+time 17:45:00
+```
